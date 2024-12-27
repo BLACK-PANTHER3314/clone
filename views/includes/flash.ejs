@@ -1,0 +1,36 @@
+<!-- // for success -->
+<% if(success && success.length) {%>
+<!--  // in second condition we use because flash store in array if there is no flash then
+   the array is empty and success show   -->
+<div
+  class="alert alert-success alert-warning alert-dismissible fade show col-6 offset-3"
+  role="alert"
+>
+  <%=success %>
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="alert"
+    aria-label="Close"
+  ></button>
+</div>
+<% } %>
+
+<!-- for failure -->
+
+<% if(failure && failure.length) {%>
+<!--  // in second condition we use because flash store in array if there is no flash then
+       the array is empty and success show   -->
+<div
+  class="alert alert-danger alert-warning alert-dismissible fade show col-6 offset-3"
+  role="alert"
+>
+  <%=failure %>
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="alert"
+    aria-label="Close"
+  ></button>
+</div>
+<% } %>
